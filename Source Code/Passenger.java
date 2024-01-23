@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+
 // Passenger class
 abstract class Passenger {
     private String name;
@@ -31,6 +32,7 @@ abstract class Passenger {
             if (!activities.contains(activity)) {
                 activities.add(activity);
                 activity.decreaseCapacity();
+                travelPackage.addPassenger(this);
             } else {
                 System.out.println("Passenger is already signed up for this activity.");
             }

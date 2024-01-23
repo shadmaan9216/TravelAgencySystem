@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+
 class TravelPackage {
     private String name;
     private int passengerCapacity;
@@ -52,6 +53,7 @@ class TravelPackage {
                         ", Description: " + activity.getDescription() +
                         ", Cost: " + activity.getCost() +
                         ", Capacity: " + activity.getCapacity());
+
             }
         }
     }
@@ -89,7 +91,7 @@ class TravelPackage {
     }
 
     public void printAvailableActivities() {
-        System.out.println("Available Activities:");
+
         for (Destination destination : itinerary) {
             System.out.println("Destination: " + destination.getName());
             for (Activity activity : destination.getActivities()) {
